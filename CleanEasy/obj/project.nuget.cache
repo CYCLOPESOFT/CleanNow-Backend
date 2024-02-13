@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "mkaS6QTFPlVp37cy7bdZ7gKTE5hkotGjuMw2Z6bHtwLnh8No91AuwhNeKpvj79OqNy56pSZESLUIcGNJGgL4xg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\addie\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Desktop\\Itla\\Cuatrimestre 8\\Proyecto Final\\CleanEasy\\CleanEasy\\CleanEasy.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\addie\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.12\\microsoft.aspnetcore.openapi.7.0.12.nupkg.sha512",
+    "C:\\Users\\addie\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\addie\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
+    "C:\\Users\\addie\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
+    "C:\\Users\\addie\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
+    "C:\\Users\\addie\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
+    "C:\\Users\\addie\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
