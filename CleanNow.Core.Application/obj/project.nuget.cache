@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "WkHvMTTSUKAt0qzXJoMjZF3TXW5zy+ezx5vUpi2qATeLxxYRosYATYecQW5t3tZXwRkwg+gcOAwSataA7Ls6oA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\addie\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Desktop\\Itla\\Cuatrimestre 8\\Proyecto Final\\CleanNow\\CleanNow.Core.Application\\CleanNow.Core.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\addie\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\addie\\.nuget\\packages\\microsoft.extensions.configuration.binder\\7.0.0\\microsoft.extensions.configuration.binder.7.0.0.nupkg.sha512",
+    "C:\\Users\\addie\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\addie\\.nuget\\packages\\microsoft.extensions.options\\7.0.0\\microsoft.extensions.options.7.0.0.nupkg.sha512",
+    "C:\\Users\\addie\\.nuget\\packages\\microsoft.extensions.options.configurationextensions\\7.0.0\\microsoft.extensions.options.configurationextensions.7.0.0.nupkg.sha512",
+    "C:\\Users\\addie\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
+    "C:\\Users\\addie\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
