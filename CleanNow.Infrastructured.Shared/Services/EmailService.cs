@@ -1,4 +1,4 @@
-﻿using CleanNow.Core.Application.Dto;
+﻿using CleanNow.Core.Application.Dto.Email;
 using CleanNow.Core.Application.Interfaces.Shared;
 using CleanNow.Core.Domain.Settings;
 using MailKit.Net.Smtp;

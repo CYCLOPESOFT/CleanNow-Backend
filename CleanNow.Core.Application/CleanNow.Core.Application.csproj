@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
@@ -7,13 +7,20 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Dto\" />
-    <Folder Include="Enum\" />
-    <Folder Include="Interfaces\" />
+    <Folder Include="Interfaces\Service\" />
     <Folder Include="Mapping\" />
     <Folder Include="Helpers\" />
     <Folder Include="Service\" />
     <Folder Include="ViewModels\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="7.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CleanNow.Core.Domain\CleanNow.Core.Domain.csproj" />
   </ItemGroup>
 
 </Project>

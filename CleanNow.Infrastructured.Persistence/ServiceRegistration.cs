@@ -12,22 +12,21 @@ namespace CleanNow.Infrastructured.Persistence
         public static void AddLayerPersistence(this IServiceCollection services, IConfiguration configuration)
         {
             #region Context
-            if (configuration.GetValue<bool>("UseInMemoryDB"))
+            if (configuration.GetValue<bool>("UseInMemoryDatabase"))
             {
-                services.AddDbContext<ApplicationContext>(options =>options.UseInMemoryDatabase(configuration.GetConnectionString("DbInMemory")));
+                services.AddDbContext<ApplicationContext>(options =>options.UseInMemoryDatabase(configuration.GetConnectionString("UseInMemoryDatabase")));
             }
             else
             {
                 services.AddDbContext<ApplicationContext>(options =>
                 {
-                    options.UseSqlServer(configuration.GetConnectionString("CleanNowDb"), m =>
+                    options.UseSqlServer(configuration.GetConnectionString("cleanEasyConnection"), m =>
                     m.MigrationsAssembly(typeof(ApplicationContext).Assembly.FullName));
                 });
             }
             #endregion
             #region Repositories
             services.AddTransient(typeof(IGenericRepository<>), typeof(GeneryRepository<>));
-
             #endregion
         }
     }

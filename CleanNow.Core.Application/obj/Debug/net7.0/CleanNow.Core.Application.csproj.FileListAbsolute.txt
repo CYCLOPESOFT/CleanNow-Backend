@@ -1,0 +1,15 @@
+C:\Users\addie\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Desktop\Itla\Cuatrimestre 8\Proyecto Final\CleanNow\CleanNow.Core.Application\bin\Debug\net7.0\CleanNow.Core.Application.deps.json
+C:\Users\addie\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Desktop\Itla\Cuatrimestre 8\Proyecto Final\CleanNow\CleanNow.Core.Application\bin\Debug\net7.0\CleanNow.Core.Application.dll
+C:\Users\addie\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Desktop\Itla\Cuatrimestre 8\Proyecto Final\CleanNow\CleanNow.Core.Application\bin\Debug\net7.0\CleanNow.Core.Application.pdb
+C:\Users\addie\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Desktop\Itla\Cuatrimestre 8\Proyecto Final\CleanNow\CleanNow.Core.Application\bin\Debug\net7.0\CleanNow.Core.Domain.dll
+C:\Users\addie\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Desktop\Itla\Cuatrimestre 8\Proyecto Final\CleanNow\CleanNow.Core.Application\bin\Debug\net7.0\CleanNow.Core.Domain.pdb
+C:\Users\addie\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Desktop\Itla\Cuatrimestre 8\Proyecto Final\CleanNow\CleanNow.Core.Application\obj\Debug\net7.0\CleanNow.Core.Application.csproj.AssemblyReference.cache
+C:\Users\addie\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Desktop\Itla\Cuatrimestre 8\Proyecto Final\CleanNow\CleanNow.Core.Application\obj\Debug\net7.0\CleanNow.Core.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\addie\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Desktop\Itla\Cuatrimestre 8\Proyecto Final\CleanNow\CleanNow.Core.Application\obj\Debug\net7.0\CleanNow.Core.Application.AssemblyInfoInputs.cache
+C:\Users\addie\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Desktop\Itla\Cuatrimestre 8\Proyecto Final\CleanNow\CleanNow.Core.Application\obj\Debug\net7.0\CleanNow.Core.Application.AssemblyInfo.cs
+C:\Users\addie\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Desktop\Itla\Cuatrimestre 8\Proyecto Final\CleanNow\CleanNow.Core.Application\obj\Debug\net7.0\CleanNow.Core.Application.csproj.CoreCompileInputs.cache
+C:\Users\addie\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Desktop\Itla\Cuatrimestre 8\Proyecto Final\CleanNow\CleanNow.Core.Application\obj\Debug\net7.0\CleanNow.Core.Application.csproj.CopyComplete
+C:\Users\addie\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Desktop\Itla\Cuatrimestre 8\Proyecto Final\CleanNow\CleanNow.Core.Application\obj\Debug\net7.0\CleanNow.Core.Application.dll
+C:\Users\addie\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Desktop\Itla\Cuatrimestre 8\Proyecto Final\CleanNow\CleanNow.Core.Application\obj\Debug\net7.0\refint\CleanNow.Core.Application.dll
+C:\Users\addie\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Desktop\Itla\Cuatrimestre 8\Proyecto Final\CleanNow\CleanNow.Core.Application\obj\Debug\net7.0\CleanNow.Core.Application.pdb
+C:\Users\addie\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Desktop\Itla\Cuatrimestre 8\Proyecto Final\CleanNow\CleanNow.Core.Application\obj\Debug\net7.0\ref\CleanNow.Core.Application.dll

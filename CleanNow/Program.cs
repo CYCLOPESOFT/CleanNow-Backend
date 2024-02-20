@@ -1,7 +1,10 @@
 using CleanNow.Core.Application;
 using CleanNow.Infrastructured.Identity;
+using CleanNow.Infrastructured.Identity.Entities;
+using CleanNow.Infrastructured.Identity.Seed;
 using CleanNow.Infrastructured.Persistence;
 using CleanNow.Infrastructured.Shared;
+using Microsoft.AspNetCore.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -27,7 +30,20 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    try
+    {
+        var userManager = services.GetRequiredService<UserManager<ApplicationUser>>();
+        var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
+        await DefautlRole.SeedAsync(userManager, roleManager);
+        await DefaultBasicUser.SeedAsync(userManager, roleManager);
+        await DefaultSuperUser.SeedAsync(userManager, roleManager);
+    }
+    catch (Exception ex) { }
+}
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
