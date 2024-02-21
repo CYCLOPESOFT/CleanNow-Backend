@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "WkHvMTTSUKAt0qzXJoMjZF3TXW5zy+ezx5vUpi2qATeLxxYRosYATYecQW5t3tZXwRkwg+gcOAwSataA7Ls6oA==",
+  "dgSpecHash": "ArDuSNzhqQbK/7GhkUMDqYsR/Hj4BEHvOHZOTuwZZSuvd+TDf58anYjhyHN5SwYeTcQNxB65rUhIVrNmo1Dytw==",
   "success": true,
   "projectFilePath": "C:\\Users\\addie\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Desktop\\Itla\\Cuatrimestre 8\\Proyecto Final\\CleanNow\\CleanNow.Core.Application\\CleanNow.Core.Application.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\addie\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\addie\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
+    "C:\\Users\\addie\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\addie\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\addie\\.nuget\\packages\\microsoft.extensions.configuration.binder\\7.0.0\\microsoft.extensions.configuration.binder.7.0.0.nupkg.sha512",
     "C:\\Users\\addie\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",

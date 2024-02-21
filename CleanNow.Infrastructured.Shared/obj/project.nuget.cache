@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "2ulOb9OJT1Stgog6e6h4V6A/jX8llJX9YHC6pMhB89onHhsyRKDCn/zdEusxcJ4X6ytdFe7E3uQN1wxX/ljD8w==",
+  "dgSpecHash": "ZWdXFSJtj2C9bxqpvvSEaGnb5aRbcB7G2oyfsQcRPatqr8r0CGYcRY5QE/2U3XeZtX6DzCAkxxrh1NqKI0EWqw==",
   "success": true,
   "projectFilePath": "C:\\Users\\addie\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Desktop\\Itla\\Cuatrimestre 8\\Proyecto Final\\CleanNow\\CleanNow.Infrastructured.Shared\\CleanNow.Infrastructured.Shared.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\addie\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
+    "C:\\Users\\addie\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
     "C:\\Users\\addie\\.nuget\\packages\\bouncycastle.cryptography\\2.2.1\\bouncycastle.cryptography.2.2.1.nupkg.sha512",
     "C:\\Users\\addie\\.nuget\\packages\\mailkit\\4.3.0\\mailkit.4.3.0.nupkg.sha512",
     "C:\\Users\\addie\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",

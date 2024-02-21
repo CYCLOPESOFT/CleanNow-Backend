@@ -1,6 +1,8 @@
-﻿using CleanNow.Core.Application.Interfaces.Shared;
+﻿using CleanNow.Core.Application.Interfaces.Identity;
+using CleanNow.Core.Application.Interfaces.Shared;
 using CleanNow.Infrastructured.Identity.Context;
 using CleanNow.Infrastructured.Identity.Entities;
+using CleanNow.Infrastructured.Identity.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -26,12 +28,15 @@ namespace CleanNow.Infrastructured.Identity
                 });
             }
             #endregion
-            #region Services
+            #region Identity
             services.AddIdentity<ApplicationUser, IdentityRole>()
                 .AddEntityFrameworkStores<IdentityContext>()
                 .AddDefaultTokenProviders();
 
             services.AddAuthentication();
+            #endregion
+            #region Service
+            services.AddTransient<IAccountService, AccountService>();
             #endregion
         }
     }

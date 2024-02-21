@@ -18,7 +18,7 @@ using System.Threading.Tasks;
 
 namespace CleanNow.Infrastructured.Identity.Services
 {
-    public class AccountService : IAccountService
+    public class AccountService :IAccountService
     {
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
@@ -141,8 +141,9 @@ namespace CleanNow.Infrastructured.Identity.Services
         //Forgot Password
         public async Task<ForgotResponse> ForgotPasswordAsync(ForgotRequest request, string origin)
         {
-            ForgotResponse response = new() {
-            HasError = false,
+            ForgotResponse response = new()
+            {
+                HasError = false,
             };
             var account = await _userManager.FindByEmailAsync(request.Email);
             if (account == null)
@@ -163,8 +164,9 @@ namespace CleanNow.Infrastructured.Identity.Services
 
         public async Task<ResetPasswordResponse> ResetPasswordAsync(ResetPasswordRequest request)
         {
-            ResetPasswordResponse response = new() { 
-            HasError= false
+            ResetPasswordResponse response = new()
+            {
+                HasError = false
             };
             var account = await _userManager.FindByEmailAsync(request.Email);
             if (account == null)
@@ -184,7 +186,7 @@ namespace CleanNow.Infrastructured.Identity.Services
 
             return response;
         }
-         
+
         //Send verificacion de email with token.
         private async Task<string> SendVerificationEmailUrl(ApplicationUser user, string origin)
         {

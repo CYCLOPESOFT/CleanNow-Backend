@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "Ho3HwYyiWI+W2cEQ7jVUV+89Z7S3S3PccJbapH+UAQBtaWAT+IkzI/8rVbPHlMBHE9thQ8VJQreirFM3pbuf+Q==",
+  "dgSpecHash": "Qy/1qInXAoUoO1C5m+x2dXC3jAFxXkYgz2ZsIat1LhbZVrE3xTICTUfsMYuAIfiOE2RS0i3WxqxgseyCzx2hIg==",
   "success": true,
   "projectFilePath": "C:\\Users\\addie\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Desktop\\Itla\\Cuatrimestre 8\\Proyecto Final\\CleanNow\\CleanNow.Infrastructured.Persistence\\CleanNow.Infrastructured.Persistence.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\addie\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
+    "C:\\Users\\addie\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
     "C:\\Users\\addie\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\addie\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
     "C:\\Users\\addie\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
