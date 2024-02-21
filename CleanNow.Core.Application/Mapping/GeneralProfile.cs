@@ -1,6 +1,8 @@
 ﻿using AutoMapper;
 using CleanNow.Core.Application.Dto.Account;
+using CleanNow.Core.Application.Dto.Account.Forgot;
 using CleanNow.Core.Application.Dto.Account.Register;
+using CleanNow.Core.Application.Dto.Account.ResetPassword;
 using CleanNow.Core.Application.ViewModels.User;
 using System;
 using System.Collections.Generic;
@@ -21,6 +23,14 @@ namespace CleanNow.Core.Application.Mapping
             CreateMap<RegisterRequest, UserSaveViewModel>()
                 .ForMember(r=>r.Error, x=>x.Ignore())
                 .ForMember(r=>r.HasError, x=>x.Ignore())
+                .ReverseMap();
+            CreateMap<ForgotRequest, ForgotPasswordViewModel>()
+                .ForMember(r => r.Error, x => x.Ignore())
+                .ForMember(r => r.HasError, x => x.Ignore())
+                .ReverseMap();
+            CreateMap<ResetPasswordRequest, ResetPasswordViewModel>()
+                .ForMember(r => r.Error, x => x.Ignore())
+                .ForMember(r => r.HasError, x => x.Ignore())
                 .ReverseMap();
         }
     }

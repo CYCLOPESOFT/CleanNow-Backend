@@ -81,9 +81,6 @@ namespace CleanNow.Infrastructured.Identity.Migrations
                     b.Property<DateTime?>("SessionAt")
                         .HasColumnType("datetime2");
 
-                    b.Property<bool>("State")
-                        .HasColumnType("bit");
-
                     b.Property<bool>("TwoFactorEnabled")
                         .HasColumnType("bit");
 

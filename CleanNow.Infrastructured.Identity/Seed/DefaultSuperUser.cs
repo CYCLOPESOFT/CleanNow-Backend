@@ -26,7 +26,7 @@ namespace CleanNow.Infrastructured.Identity.Seed
                 var user = await userManager.FindByEmailAsync(defaultUser.Email);
                 if (user != null)
                 {
-                    await userManager.CreateAsync(user);
+                    await userManager.CreateAsync(user, "123Pa$$word!");
                     var roles = new List<string>{ Roles.Basic.ToString(),Roles.SuperAdmin.ToString(),Roles.Admin.ToString() };
                     await userManager.AddToRolesAsync(user, roles);
                 }

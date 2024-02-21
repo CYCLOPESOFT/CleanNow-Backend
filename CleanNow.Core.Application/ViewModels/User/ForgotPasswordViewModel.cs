@@ -12,5 +12,7 @@ namespace CleanNow.Core.Application.ViewModels.User
         [Required(ErrorMessage ="Ingresar email")]
         [DataType(DataType.EmailAddress)]
         public string Email { get; set; }
+        public bool HasError { get; set; }
+        public string Error {  get; set; }
     }
 }

@@ -6,13 +6,19 @@ using CleanNow.Core.Application.Dto.Email;
 using CleanNow.Core.Application.Enum;
 using CleanNow.Core.Application.Interfaces.Identity;
 using CleanNow.Core.Application.Interfaces.Shared;
+using CleanNow.Core.Domain.Settings;
 using CleanNow.Infrastructured.Identity.Entities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.WebUtilities;
+using Microsoft.Extensions.Options;
+using Microsoft.IdentityModel.Tokens;
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
+using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
+using System.Security.Claims;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -23,12 +29,16 @@ namespace CleanNow.Infrastructured.Identity.Services
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly IEmailService _emailService;
+        private readonly JWTSettings _jwtSettings;
 
-        public AccountService(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager, IEmailService emailService)
+
+        public AccountService(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager, IEmailService emailService, IOptions<JWTSettings> JWTSettings)
         {
             _emailService = emailService;
             _userManager = userManager;
+            _jwtSettings = JWTSettings.Value;
             _signInManager = signInManager;
+
         }
 
         //Login
@@ -55,6 +65,8 @@ namespace CleanNow.Infrastructured.Identity.Services
                 response.Error = $"Account no confirmed for {request.Email}";
                 return response;
             }
+            JwtSecurityToken jwtSecurityToken = await GenerateJWToken(user);
+
             response.Id = user.Id;
             response.Email = user.Email;
             response.UserName = user.UserName;
@@ -62,6 +74,9 @@ namespace CleanNow.Infrastructured.Identity.Services
             response.Roles = rolesList.ToList();
             response.IsVerified = user.EmailConfirmed;
             response.Name = user.Name;
+            response.JWToken = new JwtSecurityTokenHandler().WriteToken(jwtSecurityToken);
+            var refreshToken = GenerateRefreshToken();
+            response.RefreshToken = refreshToken.Token;
             return response;
         }
 
@@ -175,7 +190,7 @@ namespace CleanNow.Infrastructured.Identity.Services
                 response.Error = $"No account register with {request.Email}";
                 return response;
             }
-            var token = Encoding.UTF8.GetString(WebEncoders.Base64UrlDecode(request.Token));
+            request.Token = Encoding.UTF8.GetString(WebEncoders.Base64UrlDecode(request.Token));
             var result = await _userManager.ResetPasswordAsync(account, request.Token, request.Password);
             if (!result.Succeeded)
             {
@@ -209,5 +224,58 @@ namespace CleanNow.Infrastructured.Identity.Services
             var verificationUri = QueryHelpers.AddQueryString(Uri.ToString(), "token", code);
             return verificationUri;
         }
+        private async Task<JwtSecurityToken> GenerateJWToken(ApplicationUser user)
+        {
+            var userClaims = await _userManager.GetClaimsAsync(user);
+            var roles = await _userManager.GetRolesAsync(user);
+
+            var roleClaims = new List<Claim>();
+
+            foreach (var role in roles)
+            {
+                roleClaims.Add(new Claim("roles", role));
+            }
+
+            var claims = new[]
+            {
+                new Claim(JwtRegisteredClaimNames.Sub,user.UserName),
+                new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+                new Claim(JwtRegisteredClaimNames.Email,user.Email),
+                new Claim("uid", user.Id)
+            }
+            .Union(userClaims)
+            .Union(roleClaims);
+
+            var symmectricSecurityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_jwtSettings.Key));
+            var signingCredetials = new SigningCredentials(symmectricSecurityKey, SecurityAlgorithms.HmacSha256);
+
+            var jwtSecurityToken = new JwtSecurityToken(
+                issuer: _jwtSettings.Issuer,
+                audience: _jwtSettings.Audience,
+                claims: claims,
+                expires: DateTime.UtcNow.AddMinutes(_jwtSettings.DurationInMinutes),
+                signingCredentials: signingCredetials);
+
+            return jwtSecurityToken;
+        }
+        private RefreshToken GenerateRefreshToken()
+        {
+            return new RefreshToken
+            {
+                Token = RandomTokenString(),
+                Expires = DateTime.UtcNow.AddDays(7),
+                Created = DateTime.UtcNow
+            };
+        }
+
+        private string RandomTokenString()
+        {
+            using var rngCryptoServiceProvider = new RNGCryptoServiceProvider();
+            var ramdomBytes = new byte[40];
+            rngCryptoServiceProvider.GetBytes(ramdomBytes);
+
+            return BitConverter.ToString(ramdomBytes).Replace("-", "");
+        }
+
     }
 }

@@ -2,6 +2,7 @@
 using CleanNow.Core.Application.Dto.Account;
 using CleanNow.Core.Application.Dto.Account.Forgot;
 using CleanNow.Core.Application.Dto.Account.Register;
+using CleanNow.Core.Application.Dto.Account.ResetPassword;
 using CleanNow.Core.Application.Interfaces.Identity;
 using CleanNow.Core.Application.Interfaces.Service;
 using CleanNow.Core.Application.ViewModels.User;
@@ -13,7 +14,8 @@ using System.Threading.Tasks;
 
 namespace CleanNow.Core.Application.Service
 {
-    public class UsuarioService:IUsuarioService
+
+    public class UsuarioService : IUsuarioService
     {
         private readonly IMapper _mapper;
         private readonly IAccountService _accountService;
@@ -23,7 +25,7 @@ namespace CleanNow.Core.Application.Service
             _accountService = accountService;
         }
 
-        public async Task<AuthenticationResponse> LoginAsync (LoginViewModel vm)
+        public async Task<AuthenticationResponse> LoginAsync(LoginViewModel vm)
         {
             AuthenticationRequest loginRequest = _mapper.Map<AuthenticationRequest>(vm);
             return await _accountService.AuthenticationAsync(loginRequest);
@@ -37,9 +39,19 @@ namespace CleanNow.Core.Application.Service
         {
             return await _accountService.ConfirmAccountAsync(userId, origin);
         }
-        //public async Task<ForgotResponse> ForgotAsync()
-        //{
-        //    //return await _accountService.ConfirmAccountAsync(userId, origin);
-        //}
+        public async Task<ForgotResponse> ForgotAsync(ForgotPasswordViewModel vm, string token)
+        {
+            ForgotRequest forgotRequest = _mapper.Map<ForgotRequest>(vm);
+            return await _accountService.ForgotPasswordAsync(forgotRequest, token);
+        }
+        public async Task<ResetPasswordResponse> ResetPasswordAsync(ForgotPasswordViewModel vm)
+        {
+            ResetPasswordRequest resetRequest = _mapper.Map<ResetPasswordRequest>(vm);
+            return await _accountService.ResetPasswordAsync(resetRequest);
+        }
+        public async Task SignOutAsync()
+        {
+            await _accountService.SignOutAsync();
+        }
     }
 }

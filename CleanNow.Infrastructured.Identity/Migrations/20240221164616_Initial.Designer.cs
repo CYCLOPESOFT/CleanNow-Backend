@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CleanNow.Infrastructured.Identity.Migrations
 {
     [DbContext(typeof(IdentityContext))]
-    [Migration("20240217173707_Initial")]
+    [Migration("20240221164616_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
@@ -83,9 +83,6 @@ namespace CleanNow.Infrastructured.Identity.Migrations
 
                     b.Property<DateTime?>("SessionAt")
                         .HasColumnType("datetime2");
-
-                    b.Property<bool>("State")
-                        .HasColumnType("bit");
 
                     b.Property<bool>("TwoFactorEnabled")
                         .HasColumnType("bit");

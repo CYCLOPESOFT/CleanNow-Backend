@@ -1,4 +1,5 @@
 using CleanNow.Core.Application;
+using CleanNow.Extensions;
 using CleanNow.Infrastructured.Identity;
 using CleanNow.Infrastructured.Identity.Entities;
 using CleanNow.Infrastructured.Identity.Seed;
@@ -18,6 +19,8 @@ builder.Services.AddLayerApplication(builder.Configuration);
 builder.Services.AddLayerIdentity(builder.Configuration);
 builder.Services.AddLayerPersistence(builder.Configuration);
 builder.Services.AddLayerShared(builder.Configuration);
+builder.Services.AddSwaggerExtension();
+builder.Services.AddApiVersioningExtension();
 
 
 var app = builder.Build();
