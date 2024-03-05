@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using CleanNow.Core.Domain.Entities;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,9 +14,14 @@ namespace CleanNow.Infrastructured.Persistence.Context
         {
         
         }
+        public DbSet<Category> categories { get; set; }
+        public DbSet<DetailsDomicile> detailsDomiciles { get; set; }
+        public DbSet<Message> message { get; set; }
+        public DbSet<ProfileUser> profileUsers { get; set; }
+        public DbSet<Ranking> rankings { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            base.OnModelCreating(modelBuilder);
         }
     }
 }
