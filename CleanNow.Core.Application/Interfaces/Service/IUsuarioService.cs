@@ -19,5 +19,6 @@ namespace CleanNow.Core.Application.Interfaces.Service
         Task<RegisterResponse> RegisterAsync(UserSaveViewModel vm, string origin);
         Task<ResetPasswordResponse> ResetPasswordAsync(ForgotPasswordViewModel vm);
         Task SignOutAsync();
+        Task<string> GenerateCodeAsync(string email);
     }
 }

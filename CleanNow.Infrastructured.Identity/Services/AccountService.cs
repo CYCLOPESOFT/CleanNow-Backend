@@ -1,4 +1,6 @@
-﻿using CleanNow.Core.Application.Dto.Account;
+﻿using Azure.Core;
+using Azure;
+using CleanNow.Core.Application.Dto.Account;
 using CleanNow.Core.Application.Dto.Account.Forgot;
 using CleanNow.Core.Application.Dto.Account.Register;
 using CleanNow.Core.Application.Dto.Account.ResetPassword;
@@ -21,6 +23,7 @@ using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http.HttpResults;
 
 namespace CleanNow.Infrastructured.Identity.Services
 {
@@ -92,38 +95,22 @@ namespace CleanNow.Infrastructured.Identity.Services
             RegisterResponse response = new();
             response.HasError = false;
             var userWithEmail = await _userManager.FindByEmailAsync(request.Email);
-            if (userWithEmail != null)
+            if (userWithEmail == null)
             {
                 response.HasError = true;
-                response.Error = $"Email '{request.Email}' is already register";
+                response.Error = $"Email '{request.Email}' isn't register";
                 return response;
             }
-            var userName = await _userManager.FindByNameAsync(request.Username);
-            if (userName != null)
-            {
-                response.HasError = true;
-                response.Error = $"Username '{request.Username}' is already taken";
-                return response;
-            }
-            var defaultUser = new ApplicationUser
-            {
-                Email = request.Email,
-                Name = request.Name,
-                PhoneNumber = request.PhoneNumber,
-                UserName = request.Username,
-                CreatedAt = DateTime.Now,
-            };
-            var result = await _userManager.CreateAsync(defaultUser, request.Password);
+
+                userWithEmail.Name = request.Name;
+            userWithEmail.Apellido = request.Apellido;
+                 userWithEmail.PhoneNumber = request.PhoneNumber;
+                 userWithEmail.CreatedAt = DateTime.Now;
+                 userWithEmail.EmailConfirmed = true;
+            var result = await _userManager.UpdateAsync(userWithEmail);
             if (result.Succeeded)
             {
-                await _userManager.AddToRoleAsync(defaultUser, Roles.Basic.ToString());
-                var verificationUri = await SendVerificationEmailUrl(defaultUser, origin);
-                await _emailService.SendEmailAsync(new EmailRequest()
-                {
-                    To = defaultUser.Email,
-                    Body = $"Please confirm your account visiting this URL {verificationUri}",
-                    Subject = "Confirma registration"
-                });
+                return response;
             }
             else
             {
@@ -131,26 +118,57 @@ namespace CleanNow.Infrastructured.Identity.Services
                 response.Error = $"An error occurred trying to register the user.";
                 return response;
             }
-            return response;
         }
-        //Confirmar correo.
-        public async Task<string> ConfirmAccountAsync(string userId, string token)
+
+
+        public async Task<string>GenerateCodeAsync (string email)
         {
-            var user = await _userManager.FindByIdAsync(userId);
-            if (user == null)
+            var code = GenerateRandomCode();
+            var userWithEmail = await _userManager.FindByEmailAsync(email);
+            if (userWithEmail != null)
             {
-                return "No accounts registered with this user";
+                return $"Email '{email}' is already register";
             }
-            token = Encoding.UTF8.GetString(WebEncoders.Base64UrlDecode(token));
-            var result = await _userManager.ConfirmEmailAsync(user, token);
+            var defaultUser = new ApplicationUser
+            {
+                Email = email,
+                Code = code,
+                UserName = email.Split('@')[0].ToLower(),
+            };
+            var result = await _userManager.CreateAsync(defaultUser);
             if (result.Succeeded)
             {
-                return $"Account confirmed for {user.Email}. You can now use the app";
+                await _userManager.AddToRoleAsync(defaultUser, Roles.Basic.ToString());
+                await _emailService.SendEmailAsync(new EmailRequest()
+                {
+                    To = email,
+                    Body = $"Your code for clean now it's {code}",
+                    Subject = "Confirm Email"
+                });
             }
             else
             {
-                return $"An error occurred with confirming {user.Email}";
+                return result.Errors.ToString();
             }
+            return $"Code send in Email {email}";
+
+        }
+
+
+        //Confirmar correo.
+        public async Task<string> ConfirmAccountAsync(string email, string code)
+        {
+            var user = await _userManager.FindByEmailAsync(email);
+            if (user == null)
+            {
+                return "No accounts registered with this email";
+            }
+            if (code != user.Code)
+            {
+                return "Code invalid";
+            }
+
+            return "Succed";
         }
 
         //Forgot Password
@@ -200,6 +218,23 @@ namespace CleanNow.Infrastructured.Identity.Services
             }
 
             return response;
+        }
+
+        private string GenerateRandomCode()
+        {
+            Random random = new Random();
+            HashSet<string> usedCodes = new HashSet<string>();
+
+            while (true)
+            {
+                string code = random.Next(1000, 9999).ToString();
+
+                if (!usedCodes.Contains(code))
+                {
+                    usedCodes.Add(code);
+                    return code;
+                }
+            }
         }
 
         //Send verificacion de email with token.

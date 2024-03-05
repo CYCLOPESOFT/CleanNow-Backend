@@ -5,6 +5,7 @@ using CleanNow.Core.Domain.Settings;
 using CleanNow.Infrastructured.Identity.Context;
 using CleanNow.Infrastructured.Identity.Entities;
 using CleanNow.Infrastructured.Identity.Services;
+
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;

@@ -9,8 +9,6 @@ C:\Users\addie\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Desktop
 C:\Users\addie\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Desktop\Itla\Cuatrimestre 8\Proyecto Final\CleanNow\CleanNow\bin\Debug\net7.0\Azure.Identity.dll
 C:\Users\addie\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Desktop\Itla\Cuatrimestre 8\Proyecto Final\CleanNow\CleanNow\bin\Debug\net7.0\BouncyCastle.Cryptography.dll
 C:\Users\addie\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Desktop\Itla\Cuatrimestre 8\Proyecto Final\CleanNow\CleanNow\bin\Debug\net7.0\MailKit.dll
-C:\Users\addie\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Desktop\Itla\Cuatrimestre 8\Proyecto Final\CleanNow\CleanNow\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
-C:\Users\addie\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Desktop\Itla\Cuatrimestre 8\Proyecto Final\CleanNow\CleanNow\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 C:\Users\addie\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Desktop\Itla\Cuatrimestre 8\Proyecto Final\CleanNow\CleanNow\bin\Debug\net7.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
 C:\Users\addie\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Desktop\Itla\Cuatrimestre 8\Proyecto Final\CleanNow\CleanNow\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\addie\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Desktop\Itla\Cuatrimestre 8\Proyecto Final\CleanNow\CleanNow\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
@@ -21,9 +19,6 @@ C:\Users\addie\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Desktop
 C:\Users\addie\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Desktop\Itla\Cuatrimestre 8\Proyecto Final\CleanNow\CleanNow\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.InMemory.dll
 C:\Users\addie\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Desktop\Itla\Cuatrimestre 8\Proyecto Final\CleanNow\CleanNow\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\addie\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Desktop\Itla\Cuatrimestre 8\Proyecto Final\CleanNow\CleanNow\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
-C:\Users\addie\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Desktop\Itla\Cuatrimestre 8\Proyecto Final\CleanNow\CleanNow\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
-C:\Users\addie\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Desktop\Itla\Cuatrimestre 8\Proyecto Final\CleanNow\CleanNow\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
-C:\Users\addie\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Desktop\Itla\Cuatrimestre 8\Proyecto Final\CleanNow\CleanNow\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
 C:\Users\addie\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Desktop\Itla\Cuatrimestre 8\Proyecto Final\CleanNow\CleanNow\bin\Debug\net7.0\Microsoft.Identity.Client.dll
 C:\Users\addie\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Desktop\Itla\Cuatrimestre 8\Proyecto Final\CleanNow\CleanNow\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
 C:\Users\addie\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Desktop\Itla\Cuatrimestre 8\Proyecto Final\CleanNow\CleanNow\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
@@ -102,3 +97,8 @@ C:\Users\addie\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Desktop
 C:\Users\addie\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Desktop\Itla\Cuatrimestre 8\Proyecto Final\CleanNow\CleanNow\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\addie\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Desktop\Itla\Cuatrimestre 8\Proyecto Final\CleanNow\CleanNow\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.Versioning.dll
 C:\Users\addie\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Desktop\Itla\Cuatrimestre 8\Proyecto Final\CleanNow\CleanNow\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\addie\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Desktop\Itla\Cuatrimestre 8\Proyecto Final\CleanNow\CleanNow\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\addie\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Desktop\Itla\Cuatrimestre 8\Proyecto Final\CleanNow\CleanNow\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\addie\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Desktop\Itla\Cuatrimestre 8\Proyecto Final\CleanNow\CleanNow\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\addie\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Desktop\Itla\Cuatrimestre 8\Proyecto Final\CleanNow\CleanNow\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\addie\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Desktop\Itla\Cuatrimestre 8\Proyecto Final\CleanNow\CleanNow\bin\Debug\net7.0\Microsoft.Extensions.Options.dll

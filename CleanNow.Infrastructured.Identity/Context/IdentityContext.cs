@@ -23,6 +23,7 @@ namespace CleanNow.Infrastructured.Identity.Context
             builder.Entity<ApplicationUser>(entity =>
             {
                 entity.ToTable(name: "Users");
+                entity.Property(u => u.UserName).IsRequired(false);
 
             });
             builder.Entity<IdentityRole>(entity =>

@@ -19,6 +19,14 @@ builder.Services.AddLayerApplication(builder.Configuration);
 builder.Services.AddLayerIdentity(builder.Configuration);
 builder.Services.AddLayerPersistence(builder.Configuration);
 builder.Services.AddLayerShared(builder.Configuration);
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAnyOrigin",
+        builder =>
+        {
+            builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
+        });
+});
 builder.Services.AddSwaggerExtension();
 builder.Services.AddApiVersioningExtension();
 
@@ -33,6 +41,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseCors("AllowAnyOrigin");
 using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
@@ -46,6 +55,8 @@ using (var scope = app.Services.CreateScope())
     }
     catch (Exception ex) { }
 }
+
+
 app.UseAuthentication();
 app.UseAuthorization();
 

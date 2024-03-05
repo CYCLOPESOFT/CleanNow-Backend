@@ -27,10 +27,16 @@ namespace CleanNow.Controllers
             var origin = Request.Headers["origin"];
             return Ok(await _accountService.RegisterBasicUserAsync(request,origin));
         }
-        [HttpGet("confirm-email")]
-        public async Task<IActionResult> RegisterAsync([FromQuery] string userId, [FromQuery] string token)
+        [HttpGet("generate-code")]
+        public async Task<IActionResult> GenerateCode(string email)
         {
-            return Ok(await _accountService.ConfirmAccountAsync(userId, token));
+            return Ok(await _accountService.GenerateCodeAsync(email));
+        }
+
+        [HttpGet("confirme-code")]
+        public async Task<IActionResult> RegisterAsync(string email, string code)
+        {
+            return Ok(await _accountService.ConfirmAccountAsync(email, code));
         }
         [HttpPost("forgot-password")]
         public async Task<IActionResult> ForgotPasswordAsync(ForgotRequest request)
