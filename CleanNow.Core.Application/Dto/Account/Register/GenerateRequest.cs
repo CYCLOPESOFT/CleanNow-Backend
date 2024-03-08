@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace CleanNow.Core.Application.Dto.Account.Register
 {
-    public class RegisterResponse
+    public class GenerateRequest
     {
-        public int StatusCode { get; set; }
-        public string Error { get; set; }
-        public bool HasError { get; set; }
+        public string Email { get; set; }
     }
 }

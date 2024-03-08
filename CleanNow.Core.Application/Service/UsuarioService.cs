@@ -35,10 +35,6 @@ namespace CleanNow.Core.Application.Service
             RegisterRequest registerRequest = _mapper.Map<RegisterRequest>(vm);
             return await _accountService.RegisterBasicUserAsync(registerRequest, origin);
         }
-        public async Task<string> ConfirmAsync(string userId, string code)
-        {
-            return await _accountService.ConfirmAccountAsync(userId, code);
-        }
         public async Task<ForgotResponse> ForgotAsync(ForgotPasswordViewModel vm, string token)
         {
             ForgotRequest forgotRequest = _mapper.Map<ForgotRequest>(vm);
@@ -54,9 +50,6 @@ namespace CleanNow.Core.Application.Service
             await _accountService.SignOutAsync();
         }
 
-        public async Task<string> GenerateCodeAsync(string email)
-        {
-            return await _accountService.GenerateCodeAsync(email);
-        }
+
     }
 }

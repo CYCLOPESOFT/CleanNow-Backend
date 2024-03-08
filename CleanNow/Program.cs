@@ -6,6 +6,7 @@ using CleanNow.Infrastructured.Identity.Seed;
 using CleanNow.Infrastructured.Persistence;
 using CleanNow.Infrastructured.Shared;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -27,6 +28,18 @@ builder.Services.AddCors(options =>
             builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
         });
 });
+builder.Services.AddControllers(o => {
+    o.Filters.Add(new ProducesAttribute("application/json"));
+}).ConfigureApiBehaviorOptions(o => {
+    o.SuppressInferBindingSourcesForParameters = true;
+    o.SuppressMapClientErrors = true;
+});
+
+
+builder.Services.AddControllers().AddNewtonsoftJson(options =>
+    options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
+);
+builder.Services.AddHealthChecks();
 builder.Services.AddSwaggerExtension();
 builder.Services.AddApiVersioningExtension();
 
@@ -56,10 +69,15 @@ using (var scope = app.Services.CreateScope())
     catch (Exception ex) { }
 }
 
-
+app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();
-
+app.UseHealthChecks("/health");
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllers();
+});
 app.MapControllers();
+
 
 app.Run();

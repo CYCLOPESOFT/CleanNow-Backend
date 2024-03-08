@@ -13,11 +13,10 @@ namespace CleanNow.Core.Application.Interfaces.Identity
     public interface IAccountService
     {
         Task<AuthenticationResponse> AuthenticationAsync(AuthenticationRequest request);
-        Task<string> ConfirmAccountAsync(string email, string code);
         Task<ForgotResponse> ForgotPasswordAsync(ForgotRequest request, string origin);
         Task<RegisterResponse> RegisterBasicUserAsync(RegisterRequest request, string origin);
         Task<ResetPasswordResponse> ResetPasswordAsync(ResetPasswordRequest request);
         Task SignOutAsync();
-        Task<string> GenerateCodeAsync(string email);
+        Task<GenerateResponse> GenerateCodeAsync(GenerateRequest generate);
     }
 }

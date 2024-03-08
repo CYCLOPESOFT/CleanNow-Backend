@@ -24,6 +24,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.AspNetCore.Mvc;
 
 namespace CleanNow.Infrastructured.Identity.Services
 {
@@ -97,43 +98,51 @@ namespace CleanNow.Infrastructured.Identity.Services
             var userWithEmail = await _userManager.FindByEmailAsync(request.Email);
             if (userWithEmail == null)
             {
+                response.StatusCode = 400;
                 response.HasError = true;
                 response.Error = $"Email '{request.Email}' isn't register";
                 return response;
             }
 
                 userWithEmail.Name = request.Name;
-            userWithEmail.Apellido = request.Apellido;
+                userWithEmail.Apellido = request.Apellido;
                  userWithEmail.PhoneNumber = request.PhoneNumber;
                  userWithEmail.CreatedAt = DateTime.Now;
                  userWithEmail.EmailConfirmed = true;
             var result = await _userManager.UpdateAsync(userWithEmail);
             if (result.Succeeded)
             {
+                response.StatusCode = 200;
                 return response;
             }
             else
             {
                 response.HasError = true;
+                response.StatusCode = 500;
                 response.Error = $"An error occurred trying to register the user.";
                 return response;
             }
         }
 
 
-        public async Task<string>GenerateCodeAsync (string email)
+        public async Task<GenerateResponse> GenerateCodeAsync(GenerateRequest generate)
         {
             var code = GenerateRandomCode();
-            var userWithEmail = await _userManager.FindByEmailAsync(email);
+            GenerateResponse response = new();
+            response.HasError = false;
+            var userWithEmail = await _userManager.FindByEmailAsync(generate.Email);
             if (userWithEmail != null)
             {
-                return $"Email '{email}' is already register";
+                response.HasError = true;
+                response.StatusCode = 400;
+                response.Error = $"Email '{generate.Email}' is already register";
+                return response;
             }
             var defaultUser = new ApplicationUser
             {
-                Email = email,
+                Email = generate.Email,
                 Code = code,
-                UserName = email.Split('@')[0].ToLower(),
+                UserName = generate.Email.Split('@')[0].ToLower(),
             };
             var result = await _userManager.CreateAsync(defaultUser);
             if (result.Succeeded)
@@ -141,35 +150,27 @@ namespace CleanNow.Infrastructured.Identity.Services
                 await _userManager.AddToRoleAsync(defaultUser, Roles.Basic.ToString());
                 await _emailService.SendEmailAsync(new EmailRequest()
                 {
-                    To = email,
+                    To = generate.Email,
                     Body = $"Your code for clean now it's {code}",
                     Subject = "Confirm Email"
                 });
+                response.StatusCode = 200;
+                response.Code = code;
+                response.Message = "Your code for clean now";
+                return response;
+
             }
             else
             {
-                return result.Errors.ToString();
+                response.StatusCode = 500;
+                response.HasError = true;
+                response.Error = $"Internal Error";
+                return response;
             }
-            return $"Code send in Email {email}";
 
+   
         }
 
-
-        //Confirmar correo.
-        public async Task<string> ConfirmAccountAsync(string email, string code)
-        {
-            var user = await _userManager.FindByEmailAsync(email);
-            if (user == null)
-            {
-                return "No accounts registered with this email";
-            }
-            if (code != user.Code)
-            {
-                return "Code invalid";
-            }
-
-            return "Succed";
-        }
 
         //Forgot Password
         public async Task<ForgotResponse> ForgotPasswordAsync(ForgotRequest request, string origin)

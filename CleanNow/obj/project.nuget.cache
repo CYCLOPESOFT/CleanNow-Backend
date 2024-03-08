@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "JXyR039XDXOzv8qwCQ+W3SLrSY2DyPHroJyPlef/0SmRUUnaEvrl3nTQoLf0z6kW5Uj5MlRnd8+ap7Lx5n8VXA==",
+  "dgSpecHash": "ouCCXsorPVXYfCIy40unyYxHTju0TRXwMKJQCwRC/yYszXbnNLo9QauEI4xHRoPQdwh9wudpYdUvLRKEgB5rdQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\addie\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Desktop\\Itla\\Cuatrimestre 8\\Proyecto Final\\CleanNow\\CleanNow\\CleanNow.csproj",
   "expectedPackageFiles": [
@@ -16,6 +16,8 @@
     "C:\\Users\\addie\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\7.0.16\\microsoft.aspnetcore.cryptography.keyderivation.7.0.16.nupkg.sha512",
     "C:\\Users\\addie\\.nuget\\packages\\microsoft.aspnetcore.diagnostics.entityframeworkcore\\7.0.16\\microsoft.aspnetcore.diagnostics.entityframeworkcore.7.0.16.nupkg.sha512",
     "C:\\Users\\addie\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\7.0.16\\microsoft.aspnetcore.identity.entityframeworkcore.7.0.16.nupkg.sha512",
+    "C:\\Users\\addie\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\7.0.16\\microsoft.aspnetcore.jsonpatch.7.0.16.nupkg.sha512",
+    "C:\\Users\\addie\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\7.0.16\\microsoft.aspnetcore.mvc.newtonsoftjson.7.0.16.nupkg.sha512",
     "C:\\Users\\addie\\.nuget\\packages\\microsoft.aspnetcore.mvc.versioning\\5.1.0\\microsoft.aspnetcore.mvc.versioning.5.1.0.nupkg.sha512",
     "C:\\Users\\addie\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.12\\microsoft.aspnetcore.openapi.7.0.12.nupkg.sha512",
     "C:\\Users\\addie\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
@@ -60,6 +62,7 @@
     "C:\\Users\\addie\\.nuget\\packages\\mimekit\\4.3.0\\mimekit.4.3.0.nupkg.sha512",
     "C:\\Users\\addie\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
     "C:\\Users\\addie\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\addie\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512",
     "C:\\Users\\addie\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
     "C:\\Users\\addie\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
     "C:\\Users\\addie\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",

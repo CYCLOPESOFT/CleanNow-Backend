@@ -4,6 +4,7 @@ using CleanNow.Core.Application.Dto.Account.Register;
 using CleanNow.Core.Application.Dto.Account.ResetPassword;
 using CleanNow.Core.Application.Interfaces.Identity;
 using Microsoft.AspNetCore.Mvc;
+using System.Net.Mime;
 
 namespace CleanNow.Controllers
 {
@@ -17,26 +18,43 @@ namespace CleanNow.Controllers
             _accountService = accountService;
         }
         [HttpPost("authenticate")]
-        public async Task<IActionResult> AuthenticateAsync(AuthenticationRequest request)
+        [Consumes(MediaTypeNames.Application.Json)]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        public async Task<IActionResult> AuthenticateAsync([FromBody] AuthenticationRequest request)
         {
             return Ok(await _accountService.AuthenticationAsync(request));
         }
         [HttpPost("register")]
-        public async Task<IActionResult> RegisterAsync(RegisterRequest request)
+        [Consumes(MediaTypeNames.Application.Json)]
+        public async Task<IActionResult> RegisterAsync([FromBody] RegisterRequest request)
         {
             var origin = Request.Headers["origin"];
-            return Ok(await _accountService.RegisterBasicUserAsync(request,origin));
+            var requestRegister = await _accountService.RegisterBasicUserAsync(request, origin);
+            if(requestRegister.StatusCode == 400) 
+            {
+                return BadRequest(400);
+            }else if (requestRegister.StatusCode == 500)
+            {
+                return StatusCode(500, requestRegister);
+            }
+            return Ok(requestRegister);
         }
-        [HttpGet("generate-code")]
-        public async Task<IActionResult> GenerateCode(string email)
+        [HttpPost("generate-code")]
+        [Consumes(MediaTypeNames.Application.Json)]
+        public async Task<IActionResult> GenerateCode([FromBody] GenerateRequest email)
         {
-            return Ok(await _accountService.GenerateCodeAsync(email));
-        }
+            var generate = await _accountService.GenerateCodeAsync(email);
+            if(generate.StatusCode == 200)
+            {
+                return Ok(generate);
+            }else if(generate.StatusCode ==400)
+            {
+                return BadRequest(generate);
+            }
+            return StatusCode(500,generate);
 
-        [HttpGet("confirme-code")]
-        public async Task<IActionResult> RegisterAsync(string email, string code)
-        {
-            return Ok(await _accountService.ConfirmAccountAsync(email, code));
         }
         [HttpPost("forgot-password")]
         public async Task<IActionResult> ForgotPasswordAsync(ForgotRequest request)
