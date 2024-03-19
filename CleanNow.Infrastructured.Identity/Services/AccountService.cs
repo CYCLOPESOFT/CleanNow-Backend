@@ -56,19 +56,14 @@ namespace CleanNow.Infrastructured.Identity.Services
                 response.Error = $"Not account registered with {request.Email}";
                 return response;
             }
-            var result = await _signInManager.PasswordSignInAsync(user.UserName, request.Password, true, false);
-            if (!result.Succeeded)
-            {
-                response.HasError = true;
-                response.Error = $"Invalid credentials for {request.Email}";
-                return response;
-            }
             if (!user.EmailConfirmed)
             {
                 response.HasError = true;
                 response.Error = $"Account no confirmed for {request.Email}";
                 return response;
             }
+            await _signInManager.SignInAsync(user, true);
+
             JwtSecurityToken jwtSecurityToken = await GenerateJWToken(user);
 
             response.Id = user.Id;
@@ -133,9 +128,15 @@ namespace CleanNow.Infrastructured.Identity.Services
             var userWithEmail = await _userManager.FindByEmailAsync(generate.Email);
             if (userWithEmail != null)
             {
-                response.HasError = true;
-                response.StatusCode = 400;
-                response.Error = $"Email '{generate.Email}' is already register";
+                response.StatusCode = 200;
+                response.Message = "Send code for signIn";
+                response.Code = code;
+                await _emailService.SendEmailAsync(new EmailRequest()
+                {
+                    To = generate.Email,
+                    Body = $"Your code for clean now it's {code}",
+                    Subject = "Login User"
+                });
                 return response;
             }
             var defaultUser = new ApplicationUser
