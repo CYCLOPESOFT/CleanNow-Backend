@@ -27,6 +27,7 @@ namespace CleanNow.Infrastructured.Persistence
             #endregion
             #region Repositories
             services.AddTransient(typeof(IGenericRepository<>), typeof(GeneryRepository<>));
+            services.AddTransient<IDetailsDomicileRepository, DetailsDomicileRepository>();
             #endregion
         }
     }

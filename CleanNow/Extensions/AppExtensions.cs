@@ -7,7 +7,7 @@
             app.UseSwagger();
             app.UseSwaggerUI(options =>
             {
-                options.SwaggerEndpoint("/swagger/vi/swagger.json", "CleanNow Api");
+                options.SwaggerEndpoint("/swagger/v1/swagger.json", "CleanNow Api");
             });
         }
     }

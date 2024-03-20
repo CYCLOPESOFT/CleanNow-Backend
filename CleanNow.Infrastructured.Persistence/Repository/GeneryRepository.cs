@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace CleanNow.Infrastructured.Persistence.Repository
 {
-    public class GeneryRepository<T> where T : class, IGenericRepository<T> 
+    public class GeneryRepository<T>: IGenericRepository<T>  where T:class
     {
         private readonly ApplicationContext _context;
         public GeneryRepository(ApplicationContext context)

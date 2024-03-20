@@ -35,10 +35,6 @@ builder.Services.AddControllers(o => {
     o.SuppressMapClientErrors = true;
 });
 
-
-builder.Services.AddControllers().AddNewtonsoftJson(options =>
-    options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
-);
 builder.Services.AddHealthChecks();
 builder.Services.AddSwaggerExtension();
 builder.Services.AddApiVersioningExtension();
@@ -49,10 +45,15 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseDeveloperExceptionPage();
+}
+else
+{
+    app.UseExceptionHandler("/Error");
+    app.UseHsts();
 }
 
+app.UseSwaggerExtension();
 app.UseHttpsRedirection();
 app.UseCors("AllowAnyOrigin");
 using (var scope = app.Services.CreateScope())

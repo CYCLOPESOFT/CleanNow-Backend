@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "ArDuSNzhqQbK/7GhkUMDqYsR/Hj4BEHvOHZOTuwZZSuvd+TDf58anYjhyHN5SwYeTcQNxB65rUhIVrNmo1Dytw==",
+  "dgSpecHash": "+UA7SrQ9TyT4kpoE87kXfOKVptQqxyzexBMnSWk8Npd2Ym1LCFwlPIaw9o9B0b5SnBY5UiQXNsmchkho6xsb3g==",
   "success": true,
   "projectFilePath": "C:\\Users\\addie\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Desktop\\Itla\\Cuatrimestre 8\\Proyecto Final\\CleanNow\\CleanNow.Core.Application\\CleanNow.Core.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\addie\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\addie\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
+    "C:\\Users\\addie\\.nuget\\packages\\mediatr\\11.0.0\\mediatr.11.0.0.nupkg.sha512",
+    "C:\\Users\\addie\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
+    "C:\\Users\\addie\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.0.0\\mediatr.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
     "C:\\Users\\addie\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\addie\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\addie\\.nuget\\packages\\microsoft.extensions.configuration.binder\\7.0.0\\microsoft.extensions.configuration.binder.7.0.0.nupkg.sha512",

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "PmnE7yAgVxDf8vvsE+i8NJl7MeaVhqYabFynWMie17ZmhwZ4yLdYyujesdnX77hwFCPqekiFSOZzvcrJyo1zoA==",
+  "dgSpecHash": "ujvfvw71ul8+oGPKFw+BtZyDwkchnGfoylAZbwkMKAAIXBkZUotXvZBDAyvYfa7/zyNf0fdtavqyJkPcjlDQ6w==",
   "success": true,
   "projectFilePath": "C:\\Users\\addie\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Desktop\\Itla\\Cuatrimestre 8\\Proyecto Final\\CleanNow\\CleanNow.Infrastructured.Identity\\CleanNow.Infrastructured.Identity.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,9 @@
     "C:\\Users\\addie\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\addie\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
     "C:\\Users\\addie\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\addie\\.nuget\\packages\\mediatr\\11.0.0\\mediatr.11.0.0.nupkg.sha512",
+    "C:\\Users\\addie\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
+    "C:\\Users\\addie\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.0.0\\mediatr.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
     "C:\\Users\\addie\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\7.0.16\\microsoft.aspnetcore.authentication.jwtbearer.7.0.16.nupkg.sha512",
     "C:\\Users\\addie\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\7.0.16\\microsoft.aspnetcore.cryptography.internal.7.0.16.nupkg.sha512",
     "C:\\Users\\addie\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\7.0.16\\microsoft.aspnetcore.cryptography.keyderivation.7.0.16.nupkg.sha512",

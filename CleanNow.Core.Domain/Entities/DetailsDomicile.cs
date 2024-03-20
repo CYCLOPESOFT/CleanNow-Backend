@@ -11,8 +11,7 @@ namespace CleanNow.Core.Domain.Entities
     {
         public string Addresses { get; set; }
         public string? Apt { get; set; }
-        public string Number { get; set; }
-        public string? Description { get; set; }
+        public string? TypeClean { get; set; }
         public string Time { get; set; }
         public string ImageDomicile { get; set; }
     }
