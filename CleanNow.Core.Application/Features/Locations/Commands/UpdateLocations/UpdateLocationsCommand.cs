@@ -35,7 +35,7 @@ namespace CleanNow.Core.Application.Features.Locations.Commands.UpdateLocations
         {
             var location = await _locationRepository.GetAsync(request.Id);
             if (location == null) throw new Exception("Location not found");
-            await _locationRepository.UpdateAsync(location,location.Id);
+            await _locationRepository.UpdateAsync(_mapper.Map<Location>(request), location.Id);
             return _mapper.Map<UpdateLocationsResponse>(location);
         }
     }

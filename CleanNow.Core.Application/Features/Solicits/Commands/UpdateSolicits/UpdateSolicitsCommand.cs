@@ -32,7 +32,7 @@ namespace CleanNow.Core.Application.Features.Solicits.Commands.UpdateSolicits
         {
             var solicit = await _solicitRepository.GetAsync(request.Id);
             if (solicit == null) throw new Exception("Solicit not found");
-            await _solicitRepository.UpdateAsync(solicit, solicit.Id);
+            await _solicitRepository.UpdateAsync(_mapper.Map<Solicit>(request), solicit.Id);
             return _mapper.Map<UpdateSolicitsResponse>(solicit);
         }
     }

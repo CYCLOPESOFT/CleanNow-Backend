@@ -34,7 +34,7 @@ namespace CleanNow.Core.Application.Features.Opinions.Commands.UpdateOpinions
             var opinion = await _opinionRepository.GetAsync(request.Id);
             if (opinion == null) throw new Exception("Opinions not found");
             var mapOption = _mapper.Map<UpdateOpinionsResponse>(opinion);
-            await _opinionRepository.UpdateAsync(opinion, opinion.Id);
+            await _opinionRepository.UpdateAsync(_mapper.Map<Opinion>(request), opinion.Id);
             return mapOption;
         }
     }

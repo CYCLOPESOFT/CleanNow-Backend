@@ -13,6 +13,7 @@ namespace CleanNow.Core.Application.Dto.DetailsDomicile
         public string? Apt { get; set; }
         public string? TypeClean { get; set; }
         public string ImageDomicile { get; set; }
+        public string Time { get; set; }
         public string UserId { get; set; }
     }
 }

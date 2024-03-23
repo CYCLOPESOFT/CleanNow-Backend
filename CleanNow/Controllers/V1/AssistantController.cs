@@ -2,6 +2,7 @@
 using CleanNow.Core.Application.Dto.Assistans;
 using CleanNow.Core.Application.Features.Assistants.Commands.CreateAssistant;
 using CleanNow.Core.Application.Features.Assistants.Commands.DeleteAssistant;
+using CleanNow.Core.Application.Features.Assistants.Commands.UpdateAssistant;
 using CleanNow.Core.Application.Features.Assistants.Queries.GetAllAssistants;
 using CleanNow.Core.Application.Features.Assistants.Queries.GetByIdAssitants;
 using CleanNow.Core.Application.Features.DetailsDomiciles.Commands.UpdateDetailsDomicile;
@@ -77,7 +78,7 @@ namespace CleanNow.Controllers.V1
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
 
-        public async Task<IActionResult> Update(int id, [FromBody] UpdateDetailsDomicileCommand command)
+        public async Task<IActionResult> Update(int id, [FromBody] UpdateAssistantCommand command)
         {
             try
             {

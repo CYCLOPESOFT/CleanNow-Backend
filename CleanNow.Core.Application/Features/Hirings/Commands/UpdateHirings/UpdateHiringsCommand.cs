@@ -16,9 +16,7 @@ namespace CleanNow.Core.Application.Features.Hirings.Commands.UpdateHirings
     {
         public int Id { get; set; }
         public int LocationId { get; set; }
-        public Location location { get; set; }
         public int AssistentId { get; set; }
-        public Assistant assistant { get; set; }
         public string UserId { get; set; }
         public string PayType { get; set; }
         public string Total { get; set; }
@@ -39,7 +37,7 @@ namespace CleanNow.Core.Application.Features.Hirings.Commands.UpdateHirings
         {
             var hiring = await _hiringRepository.GetAsync(request.Id);
             if (hiring == null) throw new Exception("Hiring not found for update");
-            await _hiringRepository.UpdateAsync(hiring, request.Id);
+            await _hiringRepository.UpdateAsync(_mapper.Map<Hiring>(request), hiring.Id);
             return _mapper.Map<HiringsUpdateResponse>(hiring);
         }
     }

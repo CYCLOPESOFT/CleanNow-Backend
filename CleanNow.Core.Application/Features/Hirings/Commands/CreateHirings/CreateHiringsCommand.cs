@@ -13,9 +13,7 @@ namespace CleanNow.Core.Application.Features.Hirings.Commands.CreateHirings
     public class CreateHiringsCommand:IRequest<int>
     {
         public int LocationId { get; set; }
-        public Location location { get; set; }
         public int AssistentId { get; set; }
-        public Assistant assistant { get; set; }
         public string UserId { get; set; }
         public string PayType { get; set; }
         public string Total { get; set; }

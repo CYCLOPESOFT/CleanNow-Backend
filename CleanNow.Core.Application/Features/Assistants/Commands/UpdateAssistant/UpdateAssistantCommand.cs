@@ -40,7 +40,7 @@ namespace CleanNow.Core.Application.Features.Assistants.Commands.UpdateAssistant
             assistant = _mapper.Map<Assistant>(command);
             await _assistantRepository.UpdateAsync(assistant, assistant.Id);
 
-            return _mapper.Map<UpdateAssistantResponse>(command);
+            return _mapper.Map<UpdateAssistantResponse>(assistant);
         }
     }
 }

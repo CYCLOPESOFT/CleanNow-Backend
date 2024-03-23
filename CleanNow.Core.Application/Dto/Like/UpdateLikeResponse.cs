@@ -12,7 +12,6 @@ namespace CleanNow.Core.Application.Dto.Like
         public string UserId { get; set; }
         public int AssistantId { get; set; }
         public bool isLike { get; set; }
-        public string NameAssistant { get; set; }
 
     }
 }

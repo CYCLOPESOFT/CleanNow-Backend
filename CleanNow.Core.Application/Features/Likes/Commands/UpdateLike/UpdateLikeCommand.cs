@@ -17,7 +17,6 @@ namespace CleanNow.Core.Application.Features.Likes.Commands.UpdateLike
         public string UserId { get; set; }
         public int AssistantId { get; set; }
         public bool isLike { get; set; }
-        public string NameAssistant { get; set; }
     }
     public class UpdateLikeCommandHandler : IRequestHandler<UpdateLikeCommand, UpdateLikeResponse>
     {
@@ -34,7 +33,7 @@ namespace CleanNow.Core.Application.Features.Likes.Commands.UpdateLike
             var like = await _likesRepository.GetAsync(request.Id);
             if (like == null) throw new Exception($"Like not found with {request.Id}");
             like  = _mapper.Map<Like>(request);
-            await _likesRepository.UpdateAsync(like, like.Id);
+            await _likesRepository.UpdateAsync(_mapper.Map<Like>(request), like.Id);
             return _mapper.Map<UpdateLikeResponse>(like);
 
         }
