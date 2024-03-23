@@ -3,9 +3,9 @@ using CleanNow.Core.Application.Dto.Account;
 using CleanNow.Core.Application.Dto.Account.Forgot;
 using CleanNow.Core.Application.Dto.Account.Register;
 using CleanNow.Core.Application.Dto.Account.ResetPassword;
+using CleanNow.Core.Application.Dto.DetailsDomicile;
 using CleanNow.Core.Application.Features.DetailsDomiciles.Commands.CreateDetailsDomicile;
 using CleanNow.Core.Application.Features.DetailsDomiciles.Commands.UpdateDetailsDomicile;
-using CleanNow.Core.Application.ViewModels.DetailsDomicile;
 using CleanNow.Core.Application.ViewModels.User;
 using CleanNow.Core.Domain.Entities;
 
@@ -15,13 +15,10 @@ namespace CleanNow.Core.Application.Mapping
     {
         public GeneralProfile()
         {
-            CreateMap<DetailsDomicile, DetailsDomicileViewModel>()
+            CreateMap<DetailsDomicile, GetDetailsDomicileDto>()
              .ReverseMap()
              .ForMember(x => x.CreatedDate, opt => opt.Ignore());
 
-            CreateMap<DetailsDomicile, DetailsDomicileSaveViewModel>()
-            .ReverseMap()
-            .ForMember(x => x.CreatedDate, opt => opt.Ignore());
 
             CreateMap<CreateDetailsDomicileCommand,DetailsDomicile>()
                 .ForMember(x=>x.CreatedDate, opt => opt.Ignore())

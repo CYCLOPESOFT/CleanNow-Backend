@@ -1,10 +1,9 @@
-﻿using CleanNow.Core.Application.Features.DetailsDomiciles.Commands.CreateDetailsDomicile;
+﻿using CleanNow.Core.Application.Dto.DetailsDomicile;
+using CleanNow.Core.Application.Features.DetailsDomiciles.Commands.CreateDetailsDomicile;
 using CleanNow.Core.Application.Features.DetailsDomiciles.Commands.DeleteDetailsDomicielById;
 using CleanNow.Core.Application.Features.DetailsDomiciles.Commands.UpdateDetailsDomicile;
 using CleanNow.Core.Application.Features.DetailsDomiciles.Queries.GetAllDetailsDomicile;
 using CleanNow.Core.Application.Features.DetailsDomiciles.Queries.GetDetailsDomicileById;
-using CleanNow.Core.Application.Interfaces.Service;
-using CleanNow.Core.Application.ViewModels.DetailsDomicile;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -14,7 +13,7 @@ namespace CleanNow.Controllers.V1
     public class DetailsDomicileController : BaseApiController
     {
         [HttpGet]
-        [ProducesResponseType(StatusCodes.Status200OK,Type = typeof(DetailsDomicileViewModel))]
+        [ProducesResponseType(StatusCodes.Status200OK,Type = typeof(GetDetailsDomicileDto))]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> GetAllAsync()
@@ -29,7 +28,7 @@ namespace CleanNow.Controllers.V1
         }
 
         [HttpGet("{id}")]
-        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(DetailsDomicileSaveViewModel))]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(GetDetailsDomicileDto))]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
 
@@ -71,7 +70,7 @@ namespace CleanNow.Controllers.V1
         }
 
         [HttpPut("{id}")]
-        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(DetailsDomicileSaveViewModel))]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(DetailsDomicileUpdateResponse))]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
 
@@ -97,7 +96,7 @@ namespace CleanNow.Controllers.V1
         }
 
         [HttpDelete("{id}")]
-        [ProducesResponseType(StatusCodes.Status204NoContent, Type = typeof(DetailsDomicileSaveViewModel))]
+        [ProducesResponseType(StatusCodes.Status204NoContent, Type = typeof(GetDetailsDomicileDto))]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
 
         public async Task<IActionResult> Delete(int id)

@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using CleanNow.Core.Application.Dto.DetailsDomicile;
 using CleanNow.Core.Application.Interfaces.Repositories;
 using CleanNow.Core.Domain.Entities;
 using MediatR;
@@ -15,8 +16,10 @@ namespace CleanNow.Core.Application.Features.DetailsDomiciles.Commands.UpdateDet
         public int Id { get; set; }
         public string Addresses { get; set; }
         public string? Apt { get; set; }
-        public string? TypeClean { get; set; }
         public string Time { get; set; }
+
+        public string? TypeClean { get; set; }
+        public string UserId { get; set; }
         public string ImageDomicile { get; set; }
     }
     public class UpdateDetailsDomicileCommandHandler:IRequestHandler<UpdateDetailsDomicileCommand, DetailsDomicileUpdateResponse> 

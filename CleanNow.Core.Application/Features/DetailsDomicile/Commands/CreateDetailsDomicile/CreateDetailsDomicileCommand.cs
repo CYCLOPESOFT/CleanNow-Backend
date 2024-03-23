@@ -17,6 +17,7 @@ namespace CleanNow.Core.Application.Features.DetailsDomiciles.Commands.CreateDet
         public string? TypeClean { get; set; }
         public string Time { get; set; }
         public string ImageDomicile { get; set; }
+        public string UserId { get; set; }
     }
     public class CreateDetailsDomicileCommandHandler : IRequestHandler<CreateDetailsDomicileCommand, int>
     {

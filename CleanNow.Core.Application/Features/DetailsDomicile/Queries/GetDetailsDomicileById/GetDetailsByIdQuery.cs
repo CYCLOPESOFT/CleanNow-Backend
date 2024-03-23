@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
+using CleanNow.Core.Application.Dto.DetailsDomicile;
 using CleanNow.Core.Application.Interfaces.Repositories;
-using CleanNow.Core.Application.ViewModels.DetailsDomicile;
 using MediatR;
 using System;
 using System.Collections.Generic;
@@ -10,11 +10,11 @@ using System.Threading.Tasks;
 
 namespace CleanNow.Core.Application.Features.DetailsDomiciles.Queries.GetDetailsDomicileById
 {
-    public class GetDetailsByIdQuery:IRequest<DetailsDomicileViewModel>
+    public class GetDetailsByIdQuery:IRequest<GetDetailsDomicileDto>
     {
         public int Id { get; set; }
     }
-    public class GetDetailsByIdQueryHandler:IRequestHandler<GetDetailsByIdQuery, DetailsDomicileViewModel>
+    public class GetDetailsByIdQueryHandler:IRequestHandler<GetDetailsByIdQuery, GetDetailsDomicileDto>
     {
         private readonly IDetailsDomicileRepository _detailsRepository;
         private readonly IMapper _mapper;
@@ -24,13 +24,14 @@ namespace CleanNow.Core.Application.Features.DetailsDomiciles.Queries.GetDetails
             _mapper = mapper;
         }
 
-        public async Task<DetailsDomicileViewModel> Handle(GetDetailsByIdQuery request, CancellationToken cancellationToken)
+        public async Task<GetDetailsDomicileDto> Handle(GetDetailsByIdQuery request, CancellationToken cancellationToken)
         {
             var detail = await _detailsRepository.GetAsync(request.Id);
             if (detail == null) throw new Exception("Detail not found");
 
-            return _mapper.Map<DetailsDomicileViewModel>(detail);
+            return _mapper.Map<GetDetailsDomicileDto>(detail);
         }
+
 
     }
 

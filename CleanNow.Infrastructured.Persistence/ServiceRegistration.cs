@@ -28,6 +28,13 @@ namespace CleanNow.Infrastructured.Persistence
             #region Repositories
             services.AddTransient(typeof(IGenericRepository<>), typeof(GeneryRepository<>));
             services.AddTransient<IDetailsDomicileRepository, DetailsDomicileRepository>();
+            services.AddTransient<IAssistantRepository, AssistantRepository>();
+            services.AddTransient<ILocationRepository, LocationRepository>();
+            services.AddTransient<IOpinionsRepository, OpinionsRepository>();
+            services.AddTransient<ISolicitRepository, SolicitRepository>();
+            services.AddTransient<IHiringRepository, HiringRepository>();
+            services.AddTransient<ILikesRepository, LikesRepository>();
+
             #endregion
         }
     }
