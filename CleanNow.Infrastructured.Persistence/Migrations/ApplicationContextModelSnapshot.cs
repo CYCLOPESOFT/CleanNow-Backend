@@ -100,6 +100,10 @@ namespace CleanNow.Infrastructured.Persistence.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Timbre")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Time")
                         .IsRequired()
                         .HasMaxLength(100)

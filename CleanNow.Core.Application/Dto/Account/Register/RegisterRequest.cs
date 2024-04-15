@@ -12,5 +12,6 @@ namespace CleanNow.Core.Application.Dto.Account.Register
         public string? PhoneNumber { get; set; }
         public string? Apellido { get; set; }
         public string Email { get; set; }
+        public string? Image { get; set; }
     }
 }
