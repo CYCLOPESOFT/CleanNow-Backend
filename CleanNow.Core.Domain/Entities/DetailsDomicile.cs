@@ -9,7 +9,7 @@ namespace CleanNow.Core.Domain.Entities
         public string? TypeClean { get; set; }
         public string Time { get; set; }
         public string Timbre { get; set; }
-        public string ImageDomicile { get; set; }
+        public string? ImageDomicile { get; set; }
         public string UserId { get; set; }
     }
 }

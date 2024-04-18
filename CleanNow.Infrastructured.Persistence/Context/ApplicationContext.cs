@@ -49,7 +49,7 @@ namespace CleanNow.Infrastructured.Persistence.Context
             {
                 options.HasKey(e=>e.Id);
                 options.Property(e=>e.Addresses).IsRequired().HasMaxLength(200);
-                options.Property(e => e.ImageDomicile).IsRequired();
+                options.Property(e => e.ImageDomicile);
                 options.Property(e => e.TypeClean).IsRequired().HasMaxLength(150);
                 options.Property(e => e.Apt).IsRequired(false).HasMaxLength(50);
                 options.Property(e => e.Time).IsRequired().HasMaxLength(100);

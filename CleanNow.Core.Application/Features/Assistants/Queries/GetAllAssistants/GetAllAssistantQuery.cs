@@ -48,7 +48,8 @@ namespace CleanNow.Core.Application.Features.Assistants.Queries.GetAllAssistants
                 LastName = a.LastName,
                 Location = a.Location,
                 Name = a.Name,
-                Price = a.Price
+                Price = a.Price,
+                Image = a.Image,
             }).ToList();
         }
 
