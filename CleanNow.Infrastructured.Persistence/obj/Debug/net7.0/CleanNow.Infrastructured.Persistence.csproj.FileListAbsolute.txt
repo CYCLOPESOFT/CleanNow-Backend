@@ -17,3 +17,23 @@ C:\Users\addie\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Desktop
 C:\Users\addie\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Desktop\Itla\Cuatrimestre 8\Proyecto Final\CleanNow\CleanNow.Infrastructured.Persistence\obj\Debug\net7.0\CleanNow.Infrastructured.Persistence.pdb
 C:\Users\addie\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Desktop\Itla\Cuatrimestre 8\Proyecto Final\CleanNow\CleanNow.Infrastructured.Persistence\obj\Debug\net7.0\CleanNow.Infrastructured.Persistence.genruntimeconfig.cache
 C:\Users\addie\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Desktop\Itla\Cuatrimestre 8\Proyecto Final\CleanNow\CleanNow.Infrastructured.Persistence\obj\Debug\net7.0\ref\CleanNow.Infrastructured.Persistence.dll
+C:\Users\User\Desktop\CleanNow-Backend\CleanNow.Infrastructured.Persistence\bin\Debug\net7.0\CleanNow.Infrastructured.Persistence.deps.json
+C:\Users\User\Desktop\CleanNow-Backend\CleanNow.Infrastructured.Persistence\bin\Debug\net7.0\CleanNow.Infrastructured.Persistence.runtimeconfig.json
+C:\Users\User\Desktop\CleanNow-Backend\CleanNow.Infrastructured.Persistence\bin\Debug\net7.0\CleanNow.Infrastructured.Persistence.dll
+C:\Users\User\Desktop\CleanNow-Backend\CleanNow.Infrastructured.Persistence\bin\Debug\net7.0\CleanNow.Infrastructured.Persistence.pdb
+C:\Users\User\Desktop\CleanNow-Backend\CleanNow.Infrastructured.Persistence\bin\Debug\net7.0\CleanNow.Core.Application.dll
+C:\Users\User\Desktop\CleanNow-Backend\CleanNow.Infrastructured.Persistence\bin\Debug\net7.0\CleanNow.Core.Domain.dll
+C:\Users\User\Desktop\CleanNow-Backend\CleanNow.Infrastructured.Persistence\bin\Debug\net7.0\CleanNow.Core.Application.pdb
+C:\Users\User\Desktop\CleanNow-Backend\CleanNow.Infrastructured.Persistence\bin\Debug\net7.0\CleanNow.Core.Domain.pdb
+C:\Users\User\Desktop\CleanNow-Backend\CleanNow.Infrastructured.Persistence\obj\Debug\net7.0\CleanNow.Infrastructured.Persistence.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\CleanNow-Backend\CleanNow.Infrastructured.Persistence\obj\Debug\net7.0\CleanNow.Infrastructured.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\CleanNow-Backend\CleanNow.Infrastructured.Persistence\obj\Debug\net7.0\CleanNow.Infrastructured.Persistence.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\CleanNow-Backend\CleanNow.Infrastructured.Persistence\obj\Debug\net7.0\CleanNow.Infrastructured.Persistence.AssemblyInfo.cs
+C:\Users\User\Desktop\CleanNow-Backend\CleanNow.Infrastructured.Persistence\obj\Debug\net7.0\CleanNow.Infrastructured.Persistence.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\CleanNow-Backend\CleanNow.Infrastructured.Persistence\obj\Debug\net7.0\CleanNow.Infrastructured.Persistence.sourcelink.json
+C:\Users\User\Desktop\CleanNow-Backend\CleanNow.Infrastructured.Persistence\obj\Debug\net7.0\CleanNow.Infrastructured.Persistence.csproj.CopyComplete
+C:\Users\User\Desktop\CleanNow-Backend\CleanNow.Infrastructured.Persistence\obj\Debug\net7.0\CleanNow.Infrastructured.Persistence.dll
+C:\Users\User\Desktop\CleanNow-Backend\CleanNow.Infrastructured.Persistence\obj\Debug\net7.0\refint\CleanNow.Infrastructured.Persistence.dll
+C:\Users\User\Desktop\CleanNow-Backend\CleanNow.Infrastructured.Persistence\obj\Debug\net7.0\CleanNow.Infrastructured.Persistence.pdb
+C:\Users\User\Desktop\CleanNow-Backend\CleanNow.Infrastructured.Persistence\obj\Debug\net7.0\CleanNow.Infrastructured.Persistence.genruntimeconfig.cache
+C:\Users\User\Desktop\CleanNow-Backend\CleanNow.Infrastructured.Persistence\obj\Debug\net7.0\ref\CleanNow.Infrastructured.Persistence.dll

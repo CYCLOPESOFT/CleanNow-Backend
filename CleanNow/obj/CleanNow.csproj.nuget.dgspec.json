@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\addie\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Desktop\\Itla\\Cuatrimestre 8\\Proyecto Final\\CleanNow\\CleanNow\\CleanNow.csproj": {}
+    "C:\\Users\\User\\Desktop\\CleanNow-Backend\\CleanNow\\CleanNow.csproj": {}
   },
   "projects": {
-    "C:\\Users\\addie\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Desktop\\Itla\\Cuatrimestre 8\\Proyecto Final\\CleanNow\\CleanNow.Core.Application\\CleanNow.Core.Application.csproj": {
+    "C:\\Users\\User\\Desktop\\CleanNow-Backend\\CleanNow.Core.Application\\CleanNow.Core.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\addie\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Desktop\\Itla\\Cuatrimestre 8\\Proyecto Final\\CleanNow\\CleanNow.Core.Application\\CleanNow.Core.Application.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\CleanNow-Backend\\CleanNow.Core.Application\\CleanNow.Core.Application.csproj",
         "projectName": "CleanNow.Core.Application",
-        "projectPath": "C:\\Users\\addie\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Desktop\\Itla\\Cuatrimestre 8\\Proyecto Final\\CleanNow\\CleanNow.Core.Application\\CleanNow.Core.Application.csproj",
-        "packagesPath": "C:\\Users\\addie\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\addie\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Desktop\\Itla\\Cuatrimestre 8\\Proyecto Final\\CleanNow\\CleanNow.Core.Application\\obj\\",
+        "projectPath": "C:\\Users\\User\\Desktop\\CleanNow-Backend\\CleanNow.Core.Application\\CleanNow.Core.Application.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\CleanNow-Backend\\CleanNow.Core.Application\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\addie\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,15 +22,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\addie\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Desktop\\Itla\\Cuatrimestre 8\\Proyecto Final\\CleanNow\\CleanNow.Core.Domain\\CleanNow.Core.Domain.csproj": {
-                "projectPath": "C:\\Users\\addie\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Desktop\\Itla\\Cuatrimestre 8\\Proyecto Final\\CleanNow\\CleanNow.Core.Domain\\CleanNow.Core.Domain.csproj"
+              "C:\\Users\\User\\Desktop\\CleanNow-Backend\\CleanNow.Core.Domain\\CleanNow.Core.Domain.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\CleanNow-Backend\\CleanNow.Core.Domain\\CleanNow.Core.Domain.csproj"
               }
             }
           }
@@ -86,25 +81,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\addie\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Desktop\\Itla\\Cuatrimestre 8\\Proyecto Final\\CleanNow\\CleanNow.Core.Domain\\CleanNow.Core.Domain.csproj": {
+    "C:\\Users\\User\\Desktop\\CleanNow-Backend\\CleanNow.Core.Domain\\CleanNow.Core.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\addie\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Desktop\\Itla\\Cuatrimestre 8\\Proyecto Final\\CleanNow\\CleanNow.Core.Domain\\CleanNow.Core.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\CleanNow-Backend\\CleanNow.Core.Domain\\CleanNow.Core.Domain.csproj",
         "projectName": "CleanNow.Core.Domain",
-        "projectPath": "C:\\Users\\addie\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Desktop\\Itla\\Cuatrimestre 8\\Proyecto Final\\CleanNow\\CleanNow.Core.Domain\\CleanNow.Core.Domain.csproj",
-        "packagesPath": "C:\\Users\\addie\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\addie\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Desktop\\Itla\\Cuatrimestre 8\\Proyecto Final\\CleanNow\\CleanNow.Core.Domain\\obj\\",
+        "projectPath": "C:\\Users\\User\\Desktop\\CleanNow-Backend\\CleanNow.Core.Domain\\CleanNow.Core.Domain.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\CleanNow-Backend\\CleanNow.Core.Domain\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\addie\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -112,7 +103,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -146,25 +136,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\addie\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Desktop\\Itla\\Cuatrimestre 8\\Proyecto Final\\CleanNow\\CleanNow.Infrastructured.Identity\\CleanNow.Infrastructured.Identity.csproj": {
+    "C:\\Users\\User\\Desktop\\CleanNow-Backend\\CleanNow.Infrastructured.Identity\\CleanNow.Infrastructured.Identity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\addie\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Desktop\\Itla\\Cuatrimestre 8\\Proyecto Final\\CleanNow\\CleanNow.Infrastructured.Identity\\CleanNow.Infrastructured.Identity.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\CleanNow-Backend\\CleanNow.Infrastructured.Identity\\CleanNow.Infrastructured.Identity.csproj",
         "projectName": "CleanNow.Infrastructured.Identity",
-        "projectPath": "C:\\Users\\addie\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Desktop\\Itla\\Cuatrimestre 8\\Proyecto Final\\CleanNow\\CleanNow.Infrastructured.Identity\\CleanNow.Infrastructured.Identity.csproj",
-        "packagesPath": "C:\\Users\\addie\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\addie\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Desktop\\Itla\\Cuatrimestre 8\\Proyecto Final\\CleanNow\\CleanNow.Infrastructured.Identity\\obj\\",
+        "projectPath": "C:\\Users\\User\\Desktop\\CleanNow-Backend\\CleanNow.Infrastructured.Identity\\CleanNow.Infrastructured.Identity.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\CleanNow-Backend\\CleanNow.Infrastructured.Identity\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\addie\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -172,15 +158,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\addie\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Desktop\\Itla\\Cuatrimestre 8\\Proyecto Final\\CleanNow\\CleanNow.Core.Application\\CleanNow.Core.Application.csproj": {
-                "projectPath": "C:\\Users\\addie\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Desktop\\Itla\\Cuatrimestre 8\\Proyecto Final\\CleanNow\\CleanNow.Core.Application\\CleanNow.Core.Application.csproj"
+              "C:\\Users\\User\\Desktop\\CleanNow-Backend\\CleanNow.Core.Application\\CleanNow.Core.Application.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\CleanNow-Backend\\CleanNow.Core.Application\\CleanNow.Core.Application.csproj"
               }
             }
           }
@@ -246,25 +231,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\addie\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Desktop\\Itla\\Cuatrimestre 8\\Proyecto Final\\CleanNow\\CleanNow.Infrastructured.Persistence\\CleanNow.Infrastructured.Persistence.csproj": {
+    "C:\\Users\\User\\Desktop\\CleanNow-Backend\\CleanNow.Infrastructured.Persistence\\CleanNow.Infrastructured.Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\addie\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Desktop\\Itla\\Cuatrimestre 8\\Proyecto Final\\CleanNow\\CleanNow.Infrastructured.Persistence\\CleanNow.Infrastructured.Persistence.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\CleanNow-Backend\\CleanNow.Infrastructured.Persistence\\CleanNow.Infrastructured.Persistence.csproj",
         "projectName": "CleanNow.Infrastructured.Persistence",
-        "projectPath": "C:\\Users\\addie\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Desktop\\Itla\\Cuatrimestre 8\\Proyecto Final\\CleanNow\\CleanNow.Infrastructured.Persistence\\CleanNow.Infrastructured.Persistence.csproj",
-        "packagesPath": "C:\\Users\\addie\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\addie\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Desktop\\Itla\\Cuatrimestre 8\\Proyecto Final\\CleanNow\\CleanNow.Infrastructured.Persistence\\obj\\",
+        "projectPath": "C:\\Users\\User\\Desktop\\CleanNow-Backend\\CleanNow.Infrastructured.Persistence\\CleanNow.Infrastructured.Persistence.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\CleanNow-Backend\\CleanNow.Infrastructured.Persistence\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\addie\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -272,18 +253,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\addie\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Desktop\\Itla\\Cuatrimestre 8\\Proyecto Final\\CleanNow\\CleanNow.Core.Application\\CleanNow.Core.Application.csproj": {
-                "projectPath": "C:\\Users\\addie\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Desktop\\Itla\\Cuatrimestre 8\\Proyecto Final\\CleanNow\\CleanNow.Core.Application\\CleanNow.Core.Application.csproj"
+              "C:\\Users\\User\\Desktop\\CleanNow-Backend\\CleanNow.Core.Application\\CleanNow.Core.Application.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\CleanNow-Backend\\CleanNow.Core.Application\\CleanNow.Core.Application.csproj"
               },
-              "C:\\Users\\addie\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Desktop\\Itla\\Cuatrimestre 8\\Proyecto Final\\CleanNow\\CleanNow.Core.Domain\\CleanNow.Core.Domain.csproj": {
-                "projectPath": "C:\\Users\\addie\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Desktop\\Itla\\Cuatrimestre 8\\Proyecto Final\\CleanNow\\CleanNow.Core.Domain\\CleanNow.Core.Domain.csproj"
+              "C:\\Users\\User\\Desktop\\CleanNow-Backend\\CleanNow.Core.Domain\\CleanNow.Core.Domain.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\CleanNow-Backend\\CleanNow.Core.Domain\\CleanNow.Core.Domain.csproj"
               }
             }
           }
@@ -337,25 +317,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\addie\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Desktop\\Itla\\Cuatrimestre 8\\Proyecto Final\\CleanNow\\CleanNow.Infrastructured.Shared\\CleanNow.Infrastructured.Shared.csproj": {
+    "C:\\Users\\User\\Desktop\\CleanNow-Backend\\CleanNow.Infrastructured.Shared\\CleanNow.Infrastructured.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\addie\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Desktop\\Itla\\Cuatrimestre 8\\Proyecto Final\\CleanNow\\CleanNow.Infrastructured.Shared\\CleanNow.Infrastructured.Shared.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\CleanNow-Backend\\CleanNow.Infrastructured.Shared\\CleanNow.Infrastructured.Shared.csproj",
         "projectName": "CleanNow.Infrastructured.Shared",
-        "projectPath": "C:\\Users\\addie\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Desktop\\Itla\\Cuatrimestre 8\\Proyecto Final\\CleanNow\\CleanNow.Infrastructured.Shared\\CleanNow.Infrastructured.Shared.csproj",
-        "packagesPath": "C:\\Users\\addie\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\addie\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Desktop\\Itla\\Cuatrimestre 8\\Proyecto Final\\CleanNow\\CleanNow.Infrastructured.Shared\\obj\\",
+        "projectPath": "C:\\Users\\User\\Desktop\\CleanNow-Backend\\CleanNow.Infrastructured.Shared\\CleanNow.Infrastructured.Shared.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\CleanNow-Backend\\CleanNow.Infrastructured.Shared\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\addie\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -363,18 +339,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\addie\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Desktop\\Itla\\Cuatrimestre 8\\Proyecto Final\\CleanNow\\CleanNow.Core.Application\\CleanNow.Core.Application.csproj": {
-                "projectPath": "C:\\Users\\addie\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Desktop\\Itla\\Cuatrimestre 8\\Proyecto Final\\CleanNow\\CleanNow.Core.Application\\CleanNow.Core.Application.csproj"
+              "C:\\Users\\User\\Desktop\\CleanNow-Backend\\CleanNow.Core.Application\\CleanNow.Core.Application.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\CleanNow-Backend\\CleanNow.Core.Application\\CleanNow.Core.Application.csproj"
               },
-              "C:\\Users\\addie\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Desktop\\Itla\\Cuatrimestre 8\\Proyecto Final\\CleanNow\\CleanNow.Core.Domain\\CleanNow.Core.Domain.csproj": {
-                "projectPath": "C:\\Users\\addie\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Desktop\\Itla\\Cuatrimestre 8\\Proyecto Final\\CleanNow\\CleanNow.Core.Domain\\CleanNow.Core.Domain.csproj"
+              "C:\\Users\\User\\Desktop\\CleanNow-Backend\\CleanNow.Core.Domain\\CleanNow.Core.Domain.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\CleanNow-Backend\\CleanNow.Core.Domain\\CleanNow.Core.Domain.csproj"
               }
             }
           }
@@ -422,25 +397,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\addie\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Desktop\\Itla\\Cuatrimestre 8\\Proyecto Final\\CleanNow\\CleanNow\\CleanNow.csproj": {
+    "C:\\Users\\User\\Desktop\\CleanNow-Backend\\CleanNow\\CleanNow.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\addie\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Desktop\\Itla\\Cuatrimestre 8\\Proyecto Final\\CleanNow\\CleanNow\\CleanNow.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\CleanNow-Backend\\CleanNow\\CleanNow.csproj",
         "projectName": "CleanNow",
-        "projectPath": "C:\\Users\\addie\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Desktop\\Itla\\Cuatrimestre 8\\Proyecto Final\\CleanNow\\CleanNow\\CleanNow.csproj",
-        "packagesPath": "C:\\Users\\addie\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\addie\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Desktop\\Itla\\Cuatrimestre 8\\Proyecto Final\\CleanNow\\CleanNow\\obj\\",
+        "projectPath": "C:\\Users\\User\\Desktop\\CleanNow-Backend\\CleanNow\\CleanNow.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\CleanNow-Backend\\CleanNow\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\addie\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -448,24 +419,23 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\addie\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Desktop\\Itla\\Cuatrimestre 8\\Proyecto Final\\CleanNow\\CleanNow.Core.Application\\CleanNow.Core.Application.csproj": {
-                "projectPath": "C:\\Users\\addie\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Desktop\\Itla\\Cuatrimestre 8\\Proyecto Final\\CleanNow\\CleanNow.Core.Application\\CleanNow.Core.Application.csproj"
+              "C:\\Users\\User\\Desktop\\CleanNow-Backend\\CleanNow.Core.Application\\CleanNow.Core.Application.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\CleanNow-Backend\\CleanNow.Core.Application\\CleanNow.Core.Application.csproj"
               },
-              "C:\\Users\\addie\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Desktop\\Itla\\Cuatrimestre 8\\Proyecto Final\\CleanNow\\CleanNow.Infrastructured.Identity\\CleanNow.Infrastructured.Identity.csproj": {
-                "projectPath": "C:\\Users\\addie\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Desktop\\Itla\\Cuatrimestre 8\\Proyecto Final\\CleanNow\\CleanNow.Infrastructured.Identity\\CleanNow.Infrastructured.Identity.csproj"
+              "C:\\Users\\User\\Desktop\\CleanNow-Backend\\CleanNow.Infrastructured.Identity\\CleanNow.Infrastructured.Identity.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\CleanNow-Backend\\CleanNow.Infrastructured.Identity\\CleanNow.Infrastructured.Identity.csproj"
               },
-              "C:\\Users\\addie\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Desktop\\Itla\\Cuatrimestre 8\\Proyecto Final\\CleanNow\\CleanNow.Infrastructured.Persistence\\CleanNow.Infrastructured.Persistence.csproj": {
-                "projectPath": "C:\\Users\\addie\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Desktop\\Itla\\Cuatrimestre 8\\Proyecto Final\\CleanNow\\CleanNow.Infrastructured.Persistence\\CleanNow.Infrastructured.Persistence.csproj"
+              "C:\\Users\\User\\Desktop\\CleanNow-Backend\\CleanNow.Infrastructured.Persistence\\CleanNow.Infrastructured.Persistence.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\CleanNow-Backend\\CleanNow.Infrastructured.Persistence\\CleanNow.Infrastructured.Persistence.csproj"
               },
-              "C:\\Users\\addie\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Desktop\\Itla\\Cuatrimestre 8\\Proyecto Final\\CleanNow\\CleanNow.Infrastructured.Shared\\CleanNow.Infrastructured.Shared.csproj": {
-                "projectPath": "C:\\Users\\addie\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Desktop\\Itla\\Cuatrimestre 8\\Proyecto Final\\CleanNow\\CleanNow.Infrastructured.Shared\\CleanNow.Infrastructured.Shared.csproj"
+              "C:\\Users\\User\\Desktop\\CleanNow-Backend\\CleanNow.Infrastructured.Shared\\CleanNow.Infrastructured.Shared.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\CleanNow-Backend\\CleanNow.Infrastructured.Shared\\CleanNow.Infrastructured.Shared.csproj"
               }
             }
           }
@@ -530,7 +500,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -8,4 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CleanNow.Infrastructured.Shared
-build_property.ProjectDir = C:\Users\addie\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Desktop\Itla\Cuatrimestre 8\Proyecto Final\CleanNow\CleanNow.Infrastructured.Shared\
+build_property.ProjectDir = C:\Users\User\Desktop\CleanNow-Backend\CleanNow.Infrastructured.Shared\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
