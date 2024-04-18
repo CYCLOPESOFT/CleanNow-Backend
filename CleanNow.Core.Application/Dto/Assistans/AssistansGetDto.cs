@@ -18,6 +18,7 @@ namespace CleanNow.Core.Application.Dto.Assistans
         public bool IsVerify { get; set; }
         public double Price { get; set; }
         public int Availability { get; set; }
+        public string? Image { get; set; }
         public int CountLikes { get; set; }
     }
 }

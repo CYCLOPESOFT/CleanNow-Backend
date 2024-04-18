@@ -23,6 +23,8 @@ namespace CleanNow.Core.Application.Features.Assistants.Commands.UpdateAssistant
         public bool IsVerify { get; set; }
         public double Price { get; set; }
         public int Availability { get; set; }
+        public string? Image { get; set; }
+
     }
     public class CUpdateAssistantCommandHandler : IRequestHandler<UpdateAssistantCommand, UpdateAssistantResponse>
     {

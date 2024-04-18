@@ -14,6 +14,7 @@ namespace CleanNow.Core.Domain.Entities
         public bool IsVerify { get; set; }
         public double Price { get; set; }
         public int Availability { get; set; }
+        public string Image { get; set; }
         public ICollection<Hiring> hirings { get; set; }
         public ICollection<Opinion> opinions { get; set; }
 

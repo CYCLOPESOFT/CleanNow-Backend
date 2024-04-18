@@ -15,6 +15,5 @@ namespace CleanNow.Infrastructured.Identity.Entities
         public DateTime? CreatedAt { get; set; }
         public DateTime? SessionAt { get; set; }
         public string? Code { get; set; }
-        public string? Image { get; set; }
     }
 }

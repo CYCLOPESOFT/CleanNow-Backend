@@ -143,6 +143,8 @@ namespace CleanNow.Infrastructured.Persistence.Context
                 a.Property(a => a.IsVerify).IsRequired();
                 a.Property(a => a.Price).IsRequired();
                 a.Property(a => a.Location).IsRequired();
+                a.Property(a => a.Image);
+
             });
             #endregion
         }

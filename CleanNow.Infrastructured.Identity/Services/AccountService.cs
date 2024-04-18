@@ -104,7 +104,6 @@ namespace CleanNow.Infrastructured.Identity.Services
                  userWithEmail.PhoneNumber = request.PhoneNumber;
                  userWithEmail.CreatedAt = DateTime.Now;
                  userWithEmail.EmailConfirmed = true;
-            userWithEmail.Image = request.Image;
             var result = await _userManager.UpdateAsync(userWithEmail);
             if (result.Succeeded)
             {
